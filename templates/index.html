@@ -1,14 +1,51 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Welcome!</title>
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
-        </form>
-    </body>
-</html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- CSS only -->
+    <style>
+        #plane{
+            background-color: #b555ed;
+            color: #d0ed51;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id='plane'>
+	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js">
+
+	</script>
+
+	<h2 id='title'>K&M Black Market</h2>
+	<p id='welcoming'>Welcome to the K&M Black Market!</p>
+
+		<label for="Item">What item would you like to buy?</label>
+    <div>
+        <form method='POST' action='/results'>
+        <h3>Markers</h3>
+            <input type="checkbox" name="Markers" value="Markers"> Plain o'l Markers<br>
+            <input type="checkbox" name="Markers" value="Crayola Markers"> Crayola Markers<br>
+            <input type="checkbox" name="Markers" value="Bic Markers"> Bic Markers<br>
+            <input type="checkbox" name="Markers" value="Sharpie Markers"> Sharpie Markers<br>
+            <h3>Scissors</h3>
+            <input type="checkbox" name="Scissors" value="Fiskars Scissors">Fiskars Scissors<br>
+            <input type="checkbox" name="Scissors" value="Ali-Express Scissors">Ali-Express Scissors<br>
+            <h3>Pillows</h3>
+            <input type="checkbox" name="Pillows" value="Teacup Pillows">Teacup Pillows<br>
+            <input type="checkbox" name="Pillows" value="Embriodery Pillows">Embriodery Pillows<br>
+            <input type="checkbox" name="Pillows" value="Elephant Pillows">Elephant Pillows<br>
+            <h3>Wood Products</h3>
+            <input type="checkbox" name="Wood" value="Paper">Paper<br>
+            <input type="checkbox" name="Wood" value="Table">Table<br>
+            <input type="checkbox" name="Wood" value="Stool">Stool<br>
+            <input type="submit">
+        </div>
+	</form>
+  </body>
+</html> 
+
